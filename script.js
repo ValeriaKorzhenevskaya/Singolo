@@ -96,6 +96,7 @@ document.querySelector(".arrows .right").addEventListener("click", function() {
 });
 
 //? Black Screen
+
 const ButtonIphone = document.querySelectorAll(".home-button");
 ButtonIphone.forEach(button =>
   button.addEventListener("click", function(event) {
@@ -133,6 +134,8 @@ Portfolio.addEventListener("click", event => {
       element.style.order = Math.floor(1 + Math.random() * 12);
     });
 });
+
+//? Border Image !!!!
 
 const Box = document.getElementById("image");
 

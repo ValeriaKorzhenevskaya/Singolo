@@ -419,6 +419,13 @@ h2 {
 .box__image {
   margin-bottom: 20px;
   cursor: pointer;
+  width: 220px;
+  height: 187px;
+}
+
+.box__image:not(.active):hover {
+  box-shadow: 0 0 10px #ffffff;
+  transition: all 0.2s ease-in-out;
 }
 
 .box__image.selected {
