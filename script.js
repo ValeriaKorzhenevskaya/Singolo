@@ -144,37 +144,27 @@ Box.addEventListener("click", event => {
 });
 
 //!! Form !!!!
-const submitButton = document.getElementById("submit-button");
 const closeButton = document.getElementById("close-button");
 const formBlock = document.getElementById("form");
-const subject = document.getElementById("subject").value.toString();
-const textarea = document.getElementById("textarea").value.toString();
+const subject = document.getElementById("subject");
+const textarea = document.getElementById("textarea");
 const message = document.getElementById("message");
 
-formBlock.addEventListener ('submit', (event) => {
+formBlock.addEventListener("submit", event => {
   event.preventDefault();
   document.getElementById("message-block").classList.remove("hidden");
 
-  if (subject.value !== '') {
-    message.querySelector("#subj_result").textContent = subject.value;
-  } else {
-    message.querySelector("#p_subj").textContent = 'No subject';
-  }
-  if (textarea !== '') {
-    message.querySelector("#description_result").textContent = textarea.value;
-  } else {
-    message.querySelector("#p_textarea").textContent = 'No description';
-  }
-
+  message.querySelector("#subj_result").textContent = subject.value
+    ? `Subject: ${subject.value}`
+    : "No subject";
+  message.querySelector("#description_result").textContent = textarea.value
+    ? `Description: ${textarea.value}`
+    : "No description";
 });
 
 closeButton.addEventListener("click", () => {
-  // document.getElementById("subj_result").innerText = "";
-  // document.getElementById("description_result").innerText = '';
-
   document.getElementById("message-block").classList.add("hidden");
-
-
-  textarea = '';
-  subject = '';
+  textarea.value = "";
+  subject.value = "";
+  formBlock.reset();
 });
