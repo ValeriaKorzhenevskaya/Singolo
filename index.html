@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
     <title>Singolo</title>
 </head>
-<body style="width: 1020px; margin: 0 auto;">
+<body style="margin: 0 auto;">
 
 <!-- Part 1 -->
 
@@ -16,42 +16,56 @@
             <h1 class="logo">Singolo<span style="color: #f06c64;">*</span></h1>
   
             <nav class="header__navigation">
-              <ul>
-                <li><a class="navigation__link" href="#">Home</a></li>
-                <li><a class="navigation__link" href="#">Services</a></li>
-                <li><a class="navigation__link" href="#">Portfolio</a></li>
-                <li><a class="navigation__link" href="#">About</a></li>
-                <li><a class="navigation__link" href="#">Contact</a></li>
+              <ul id="navigation">
+                <li class="nav "><a class="navigation__link nav_active" href="#">Home</a></li>
+                <li class="nav"><a class="navigation__link" href="#services">Services</a></li>
+                <li class="nav"><a class="navigation__link" href="#portfolio">Portfolio</a></li>
+                <li class="nav"><a class="navigation__link" href="#about">About</a></li>
+                <li class="nav"><a class="navigation__link" href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
   
-      <div class="header__bottom"></div>
+
   
       <main>
         <div class="wrapper">
-          <div class="slider">
-            <a href="#"><div class="chev_left"></div></a>
-            <div>
-              <img class="iphone__vertical" src="assets/iPhone Vertical.png" />
+          <div class="slider"> 
+            <div class="arrows">
+              <div class="left"><a href="#"><div class="chev_left"></div></a></div>
+              <div class="right"><a href="#"><div class="chev_right"></div></a></div>
             </div>
+
+            <div class="items active">
+              <div class="vertical-phone">
+                <img class="iphone__vertical" src="assets/iPhone Vertical.png" />
+                <div class="home-button"></div>
+                <div class="black-screen_vertical"  hidden='true'></div>
+              </div>
   
-            <div>
-              <img
+              <div class="horizontal-phone">
+                <img
                 class="iphone__horizontal"
                 src="assets/iPhone Horizontal.png"
-              />
+                />
+                <div class="home-button"></div>
+                <div class="black-screen_horizontal"  hidden='true'></div>
+              </div>
             </div>
-            <a href="#"><div class="chev_right"></div></a>
+
+            <div class="items">
+              <img class="nextIphone slide2" src="assets/Slider2.png" alt="slider2">
+            </div>
+
+            
           </div>
         </div>
       </main>
+
   
-      <div class="main__bottom"></div>
-  
-      <div class="services">
+      <div class="services" id="services">
         <div class="wrapper">
           <div class="services__header">
             <h2>Our Services</h2>
@@ -133,7 +147,7 @@
 
       <!-- Part 2 -->
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="wrapper">
           <h2 class="portfolio__title">Portfolio</h2>
   
@@ -143,13 +157,13 @@
           </p>
   
           <div class="portfolio-button">
-            <button class="button_bordered button_bordered_active">All</button>
+            <button class="button_bordered active_button">All</button>
             <button class="button_bordered">Web Design</button>
             <button class="button_bordered">Graphic Design</button>
             <button class="button_bordered">Artwork</button>
           </div>
   
-          <div class="box">
+          <div id="image" class="box">
             <img class="box__image" src="assets/Image 1.png" />
             <img class="box__image" src="assets/Image 2.png" />
             <img class="box__image" src="assets/Image 3.png" />
@@ -167,7 +181,7 @@
         <div class="portfolio__bottom"></div>
       </section>
   
-      <section class="about-us">
+      <section class="about-us" id="about">
         <div class="wrapper">
           <h2 class="about-us__title">About Us</h2>
   
@@ -186,12 +200,13 @@
                 Quisque luctus, quam eget molestie commodo, lacus purus cursus
                 purus, nec rutrum tellus dolor id lorem.
               </div>
-              <div class="social-media">
-                <img class="icons_information" id="facebook" src="assets/facebook.png" />
-                <img class="icons_information" id="google" src="assets/Google.png" />
-                <img class="icons_information" id="twitter" src="assets/Twitter.png" />
-                <img class="icons_information" id="linkedIn" src="assets/LinkedIn.png" />
-              </div>
+
+              <ul class="information__social social">
+                <li class="icons_info"><a class="icon icon--facebook" href="https://www.facebook.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--google" href="https://www.plus.google.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--twitter" href="https://www.twitter.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
+              </ul>
             </div>
   
             <div class="information__item">
@@ -201,12 +216,12 @@
                 Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
                 laoreet, viverra lacus ut, ultrices velit.
               </div>
-              <div class="social-media">
-                <img class="icons_information" id="facebook" src="assets/facebook.png" />
-                <img class="icons_information" id="google" src="assets/Google.png" />
-                <img class="icons_information" id="twitter" src="assets/Twitter.png" />
-                <img class="icons_information" id="linkedIn" src="assets/LinkedIn.png" />
-              </div>
+              <ul class="information__social social">
+                <li class="icons_info"><a class="icon icon--facebook" href="https://www.facebook.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--google" href="https://www.plus.google.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--twitter" href="https://www.twitter.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
+              </ul>
             </div>
   
             <div class="information__item">
@@ -216,12 +231,12 @@
                 Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
                 et consequat felis. Quisque condimentum.
               </div>
-              <div class="social-media">
-                <img class="icons_information" id="facebook" src="assets/facebook.png" />
-                <img class="icons_information" id="google" src="assets/Google.png" />
-                <img class="icons_information" id="twitter" src="assets/Twitter.png" />
-                <img class="icons_information" id="linkedIn" src="assets/LinkedIn.png" />
-              </div>
+              <ul class="information__social social">
+                <li class="icons_info"><a class="icon icon--facebook" href="https://www.facebook.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--google" href="https://www.plus.google.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--twitter" href="https://www.twitter.com/" target="_blank"></a></li>
+                <li class="icons_info"><a class="icon icon--linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -231,8 +246,23 @@
 
       <!-- Part 3 -->
 
-      <section class="get-a-quote">
+      <section class="get-a-quote" id="contact">
+
+              <div id="message-block" class="hidden">
+                <div id="message">
+                  <p>The letter was sent!</p>
+                </br>
+                <p id="p_subj">Subject:<span id="subj_result"></span></p>
+                </br>
+                <p id="p_textarea">Description:<span id="description_result"></span></p>
+                </br>
+                <button id="close-button">OK</button>
+                </div>
+              </div>
+
         <div class="wrapper">
+
+
           <h2 class="get-a-quote__title">Get a Quote</h2>
   
           <p class="get-a-quote__text">
@@ -245,15 +275,22 @@
           <div class="layout-2-column ">
   
             <div class="get-a-quote__form">
-              <form action=""/practice.html"" method="POST">
+
+
+              <form id="form" method="POST" action="#">
+
                 <input class="get-a-quote__form_name" type="text" name="username" placeholder="Name (Required)" required>
                 <input class="get-a-quote__form_email" type="email" name="email" placeholder="Email (Required)" required>
-                <input class="get-a-quote__form_subject" type="text" name="subject" placeholder="Subject">
-                <textarea class="get-a-quote__form_message" name="message" cols="40" rows="11" placeholder="Describe your project in detail..."></textarea>
+                <input class="get-a-quote__form_subject" type="text" name="subject" id="subject" placeholder="Subject">
+                <textarea class="get-a-quote__form_message" name="message" id="textarea" cols="40" rows="11" placeholder="Describe your project in detail..."></textarea>
+
                 <div class="get-a-quote__button">
-                  <button type="submit" class="button button_colored">Submit</button>
+                  <button type="submit" id="submit-button" class="button button_colored" formaction="#">Submit</button>
                 </div>
+
               </form>
+              
+
             </div>
   
             <div class="contact-information">
@@ -292,15 +329,15 @@
           <div class="layout-2-column">
             <p class="footer__copyright">© Copyright 2013</p>
   
-            <div class="footer__social-media">
-              <img class="icons_footer" id="facebook" src="assets/facebook.png" />
-              <img class="icons_footer" id="google" src="assets/Google.png" />
-              <img class="icons_footer" id="twitter" src="assets/Twitter.png" />
-              <img class="icons_footer" id="linkedIn" src="assets/LinkedIn.png" />
-            </div>
+            <ul class="footer__social social">
+              <li class="icons_info"><a class="icon icon--facebook" href="https://www.facebook.com/" target="_blank"></a></li>
+              <li class="icons_info"><a class="icon icon--google" href="https://www.plus.google.com/" target="_blank"></a></li>
+              <li class="icons_info"><a class="icon icon--twitter" href="https://www.twitter.com/" target="_blank"></a></li>
+              <li class="icons_info"><a class="icon icon--linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
+            </ul>
           </div>
         </div>
       </footer>
-
+      <script src="script.js"></script>
 </body>
 </html>
