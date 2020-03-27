@@ -141,6 +141,79 @@ li {
   color: #f06c64;
 }
 
+.header_burger {
+  display: none;
+}
+
+/* @media (max-width: 767px) {
+  .logo {
+    justify-content: center;
+        padding-right: 25px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+  }
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .header_burger span {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header_burger::before,
+  .header_burger::after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header_burger::before {
+    top: 0;
+  }
+
+  .header_burger::after {
+    bottom: 0;
+  }
+
+  .header__navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+  }
+
+  .header__navigation li{
+    display: block;  
+  }
+  .header_burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header_burger.active span {
+    transform: scale(0);
+  }
+} */
+
 /*! Main */
 
 main {
@@ -153,7 +226,8 @@ main {
 }
 
 .slider {
-  width: 940px;
+  /* width: 940px; */
+  width: 100%;
   position: relative;
 }
 
@@ -341,16 +415,16 @@ main {
     height: 23.53vw;
     width: auto;
     top: 20vw;
-    left: 42vw;
+    left: 37vw;
   }
   .horizontal-phone .home-button {
     top: 28vw;
-    left: 42vw;
+    left: 37vw;
     z-index: 1;
   }
   .black-screen_horizontal {
     top: 14vw;
-    left: 54.5vw;
+    left: 49.6vw;
     height: 33vw;
     width: 19vw;
   }
@@ -683,6 +757,7 @@ p {
 
 .get-a-quote {
   background-color: #f06c64;
+  border-bottom: 4px solid #ea676b;
 }
 
 .get-a-quote__title {
@@ -901,12 +976,6 @@ a {
     0 1px 1px #e47a7a;
 }
 
-.get-a-quote__bottom {
-  width: 1020px;
-  height: 4px;
-  background-color: #ea676b;
-}
-
 @media (min-width: 768px) and (max-width: 1019px) {
   .contact-information {
     padding-left: 19px;
@@ -915,24 +984,31 @@ a {
   .contact-information__text {
     width: 29vw;
   }
-
+  .layout-2-column {
+    width: 100%;
+  }
   .get-a-quote__form {
-    height: 47vw;
+    position: relative;
+    width: 65%;
+  }
+
+  .get-a-quote__form input,
+  .get-a-quote__form textarea {
+    width: 100%;
+  }
+
+  .get-a-quote__form_email,
+  .get-a-quote__form_name,
+  .get-a-quote__form_subject,
+  .get-a-quote__form_message {
+    margin-bottom: 10px;
   }
 
   .layout-2-column {
     width: 88vw;
   }
 
-  #form {
-    height: 41vw;
-  }
-
-  .get-a-quote__form_message {
-    height: 20vw;
-  }
-
-  .modal-overlay {
+  .message-block {
     width: 100%;
   }
 }
