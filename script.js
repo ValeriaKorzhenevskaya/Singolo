@@ -2,6 +2,13 @@
 
 const Navigation = document.getElementById("navigation");
 
+document.querySelector(".header__burger").addEventListener("click", event => {
+  document.querySelector(".header__burger").classList.toggle("target");
+  document.querySelector(".header__navigation").classList.toggle("target");
+  document.querySelector(".logo").classList.toggle("target");
+});
+// document.querySelector("body").classList.toggle("lock");
+
 Navigation.addEventListener("click", event => {
   Navigation.querySelectorAll("a").forEach(Element =>
     Element.classList.remove("nav_active")
