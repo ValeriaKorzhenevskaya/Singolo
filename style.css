@@ -537,6 +537,46 @@ main {
   }
 }
 
+@media (max-width: 375px) {
+  .black-screen_horizontal {
+    top: 14vw;
+    left: 42vw;
+    height: 32vw;
+    width: 18vw;
+  }
+  .black-screen_vertical {
+    top: 10vw;
+    left: 3.7vw;
+    height: 32vw;
+    width: 18vw;
+  }
+  .vertical-phone .home-button {
+    top: 35vw;
+    left: 8vw;
+    z-index: 1;
+  }
+  .horizontal-phone .home-button {
+    top: 24vw;
+    left: 30vw;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 320px) {
+  .horizontal-phone img {
+    height: 22vw;
+    width: auto;
+    top: 20vw;
+    left: 30vw;
+  }
+  .vertical-phone img {
+    width: 22vw;
+    height: auto;
+    top: 20px;
+    left: 10px;
+  }
+}
+
 /*! Services */
 
 .services {
@@ -733,6 +773,12 @@ h2 {
   }
 }
 
+@media (min-width: 320px) {
+  .button_bordered {
+    height: 20px;
+    font-size: 8px;
+  }
+}
 /*! About Us */
 
 .about-us {
