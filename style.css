@@ -562,7 +562,7 @@ main {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .horizontal-phone img {
     height: 22vw;
     width: auto;
@@ -773,7 +773,7 @@ h2 {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .button_bordered {
     height: 20px;
     font-size: 8px;
